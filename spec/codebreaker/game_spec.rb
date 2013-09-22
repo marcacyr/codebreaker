@@ -5,6 +5,7 @@ module Codebreaker
     let(:output) { double('output').as_null_object }
     let(:game)   { Game.new(output) }
 
+    #derping the herp
     describe "#start" do
       it "sends a welcome message" do
         output.should_receive(:puts).with('Welcome to Codebreaker!')
@@ -17,6 +18,7 @@ module Codebreaker
       end
     end
 
+    #herping the derp
     describe "#guess" do
       it "sends the mark to output" do 
         game.start('1234')
